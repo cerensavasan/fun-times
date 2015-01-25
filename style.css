@@ -1,7 +1,3 @@
-.chart circle {
-  fill: steelblue;
-}
-
 .chart polyline {
   fill: none;
   stroke: green;

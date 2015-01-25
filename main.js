@@ -17,7 +17,8 @@ var circle = chart.selectAll("circle")
   	.enter().append("circle")
   	.attr("cx", function(d) { return d * 10; })
     .attr("cy", function(d) { return d * 10; })
-    .attr("r", radius);
+    .attr("r", radius)
+    .attr("fill", function(d) { return "rgb(0,0," + (255 - Math.round(3.5 * d)) + ")"; });
 
 var polyline = chart.selectAll("polyline")
 	.data(data)
